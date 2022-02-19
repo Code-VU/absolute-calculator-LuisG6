@@ -1,7 +1,20 @@
 def calculateAbsolute():
     
     # This first line is provided for you
-    in_num  = input("Enter a number: ")
+    try: 
+        in_num  = int(input("Enter a number: "))
+
+        if in_num < 21:
+            absoluteDifference = 21 - in_num
+    
+        else:
+            absoluteDifference = (in_num - 21) * 2
+
+        print(f"Result: {absoluteDifference}")
+
+    except:
+        print("Please enter a number ")
+
     # end assignment
 
 ## if you want to test locally before you try to sync
